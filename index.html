@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferentes opciones para aplicar estilos con CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+     <h2>1. Posicionamiento con Flexbox</h2> 
+        <div class="flexbox">
+            <a href="index.html" style="background-color: rgb(32, 77, 137);">
+                <img src="./images/logo.png" alt="Logo de la marca" height="100" width="100" style="background-color: red";>
+            </a>
+            <input type="text" name="search" id="search" class="search" placeholder="Search" style="background-color:lightgreen";>
+            <div style="background-color: lawngreen";>
+                <img src="./images/cart.png" alt="carrito">
+                <img src="./images/user.png" alt="user">
+            </div>
+        </div>
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<h2>2. Posicionamiento con Position</h2>
+        
+       <div class="relative">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo de la marca" height="100" width="100">
+            </a>
+            <input type="text" name="search" id="search" class="search" placeholder="Search">
+            <div class="absolute">
+                <img src="./images/cart.png" alt="carrito">
+                <img src="./images/user.png" alt="user">
+            </div>
+        </div> 
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <h2>3.Posicionamiento con Float</h2>
+        <div>
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo de la marca" height="100" width="100">
+            </a>
+            <input type="text" name="search" id="search" class="search" placeholder="Search">
+            <div>
+                <img src="./images/cart.png" alt="carrito">
+                <img src="./images/user.png" alt="user">
+            </div>
+        </div> 
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <h2>4. Posicionamiento con Grid</h2>
+        <div class="grid">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo de la marca" height="100" width="100">
+            </a>
+            <input type="text" name="search" id="search" class="search" placeholder="Search">
+            <div>
+                <img src="./images/cart.png" alt="carrito">
+                <img src="./images/user.png" alt="user">
+            </div>
+        </div> 
+    </main>
+</body>
+</html>

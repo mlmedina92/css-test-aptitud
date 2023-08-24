@@ -1,0 +1,34 @@
+/* Estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.search {
+    max-width: 300px;
+}
+
+
+ /* 1. Posicionamiento con Flexbox  */
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  2. Posicionamiento con Position  */
+.relative{
+    position: relative;
+}
+.absolute{
+position: absolute;
+}
+
+
+/*  3. Posicionamiento con Float  */
+/*  4. Posicionamiento con Grid  */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
