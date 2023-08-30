@@ -1,34 +1,69 @@
 /* Estilos generales */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.search {
-    max-width: 300px;
+
+h6 {
+    text-align: center;
+    padding: 20px;
 }
 
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
 
- /* 1. Posicionamiento con Flexbox  */
-.flexbox{
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 1. Posicionamiento con Flexbox  */
+.flexbox {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.search {
+    max-width: 300px;
+    flex-grow: 4;
+}
+
+.logo-flexbox {
+    padding: 0 20px
+}
+
+.icon-flexbox {
+    margin: 0 20px;
+}
+
+.icon-flexbox2 {
+    margin: 0 20px;
 }
 
 /*  2. Posicionamiento con Position  */
-.relative{
+.relative {
     position: relative;
+    background-color: lightgray;
+
 }
-.absolute{
-position: absolute;
+
+.absolute {
+    position: absolute;
 }
 
 
 /*  3. Posicionamiento con Float  */
 /*  4. Posicionamiento con Grid  */
-.grid{
+.grid {
+    background-color: lightgray;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-
 }
