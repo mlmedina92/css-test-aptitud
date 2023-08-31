@@ -48,6 +48,23 @@ input:focus {
     margin: 0 20px;
 }
 
+
+/* MQ: Posicionamiento con Flexbox  */
+
+@media (max-width: 767px) {
+    .logo {
+        order: 1;
+    }
+    .search {
+        order: 2;
+        flex-grow: 1;
+    }
+
+    .container-icons {
+        order: 3;
+    }
+}
+
 /*  2. Posicionamiento con Position  */
 .relative {
     position: relative;
