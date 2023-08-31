@@ -11,32 +11,33 @@
 <body>
     <main>
         <h6>1. Posicionamiento con Flexbox</h6>
-        <na class="flexbox">
-            <a href="index.html">
-                <img src="./images/logo.png" alt="Logo de la marca" height="50" width="100" class="logo-flexbox">
-            </a>
-            <input type="text" name="search" id="search" class="search" placeholder="Search">
-            <div>
+        <div class="flexbox">
+            <div class="logo-flexbox">
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="Logo de la marca" height="50" width="100">
+                </a>
+            </div>
+            <div class="container-icons">
                 <img src="./images/cart.png" alt="carrito" width="32" height="32" class="icon-flexbox">
                 <img src="./images/user.png" alt="user" width="32" height="32" class="icon-flexbox2">
             </div>
-        </na>
 
-        <br><br><br><br><br><br><br><br>
+
+            <input type="text" name="search" id="search" class="search" placeholder="Search">
+        </div>
+
         <br><br><br><br><br><br><br><br>
         <h6>2. Posicionamiento con Position</h6>
+        <div>
 
-        <div class="relative">
-            <a href="index.html">
+        <div class="nav-position">
+            <a href="index.html" class="absolute logo-absolute">
                 <img src="./images/logo.png" alt="Logo de la marca" height="50" width="100">
             </a>
-            <input type="text" name="search" id="search" class="search" placeholder="Search">
-            <div class="absolute">
-                <img src="./images/cart.png" alt="carrito" width="32" height="32">
-                <img src="./images/user.png" alt="user" width="32" height="32">
-            </div>
+            <input type="text" name="search" id="search" class="absolute search-absolute" placeholder="Search">
+                <img src="./images/cart.png" alt="carrito" width="32" height="32" class="icon-absolute">
+                <img src="./images/user.png" alt="user" width="32" height="32" class="icon2-absolute">
         </div>
-        <br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
         <h6>3.Posicionamiento con Float</h6>
         <div>
@@ -49,7 +50,6 @@
                 <img src="./images/user.png" alt="user" width="32" height="32">
             </div>
         </div>
-        <br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
         <h6>4. Posicionamiento con Grid</h6>
         <div class="grid">

@@ -1,5 +1,4 @@
-/* Estilos generales */
-* {
+Estilos generales * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,14 +25,24 @@ input:focus {
 /* 1. Posicionamiento con Flexbox  */
 .flexbox {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: lightgray;
 }
 
+.logo {
+    order: 1;
+}
+
+.container-icons {
+    order: 3;
+}
+
 .search {
     max-width: 300px;
     flex-grow: 4;
+    order:2
 }
 
 .logo-flexbox {
@@ -51,32 +60,70 @@ input:focus {
 
 /* MQ: Posicionamiento con Flexbox  */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+    .flexbox {
+        flex-direction: column;
+    }
+    .flexbox2 {
+        display: flex;
+        flex-direction: row;
+    }
     .logo {
         order: 1;
     }
     .search {
-        order: 2;
-        flex-grow: 1;
-    }
-
-    .container-icons {
         order: 3;
+    }
+    .container-icons {
+        order: 2;
     }
 }
 
 /*  2. Posicionamiento con Position  */
+.nav-position{
+    position: relative;
+    background-color: lightgrey;
+    height: 80px;
+
+}
 .relative {
     position: relative;
-    background-color: lightgray;
-
 }
 
 .absolute {
     position: absolute;
 }
 
+.logo-absolute{
+    top:20%;
+    left:10%;
+    background-color: yellow;
+}
 
+.search-absolute{
+    top:30%;
+    left:30%;
+    background-color: green;
+}
+
+.icon-absolute{
+
+    position: absolute;
+    top:40%;
+
+        left:80%;
+        background-color: blueviolet;
+    
+}
+.icon2-absolute{
+    top:40%;
+
+    position: absolute;
+
+    left:90%;
+    background-color: blue;
+
+}
 /*  3. Posicionamiento con Float  */
 /*  4. Posicionamiento con Grid  */
 .grid {
