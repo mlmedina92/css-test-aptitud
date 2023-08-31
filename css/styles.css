@@ -13,47 +13,44 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    max-width: 300px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input:focus {
-    outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 
 /* 1. Posicionamiento con Flexbox  */
 .flexbox {
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgray;
 }
 
-.logo {
+.flexbox .logo {
     order: 1;
+    padding: 0 20px
 }
 
 .container-icons {
     order: 3;
 }
 
-.search {
-    max-width: 300px;
+.flexbox .search {
     flex-grow: 4;
-    order:2
+    order: 2
 }
 
-.logo-flexbox {
-    padding: 0 20px
-}
-
-.icon-flexbox {
+.flexbox .icon1 {
     margin: 0 20px;
 }
 
-.icon-flexbox2 {
+.flexbox .icon2 {
     margin: 0 20px;
 }
 
@@ -62,30 +59,30 @@ input:focus {
 
 @media screen and (max-width: 767px) {
     .flexbox {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
-    .flexbox2 {
-        display: flex;
-        flex-direction: row;
-    }
-    .logo {
+
+    .flexbox .logo {
         order: 1;
     }
-    .search {
+
+    .flexbox .search {
         order: 3;
     }
+
     .container-icons {
         order: 2;
     }
+
 }
 
 /*  2. Posicionamiento con Position  */
-.nav-position{
-    position: relative;
+.position {
     background-color: lightgrey;
     height: 80px;
-
+    position: relative;
 }
+
 .relative {
     position: relative;
 }
@@ -94,36 +91,44 @@ input:focus {
     position: absolute;
 }
 
-.logo-absolute{
-    top:20%;
-    left:10%;
+.position .logo {
     background-color: yellow;
+    left: 1.5%;
+    top: 20%;
 }
 
-.search-absolute{
-    top:30%;
-    left:30%;
+.position .search {
     background-color: green;
+    top: 30%;
+    left: 30%;
 }
 
-.icon-absolute{
-
+.position .icon1 {
     position: absolute;
-    top:40%;
-
-        left:80%;
-        background-color: blueviolet;
-    
+    top: 40%;
+    left: 80%;
+    background-color: blueviolet;
 }
-.icon2-absolute{
-    top:40%;
 
-    position: absolute;
-
-    left:90%;
+.position .icon2 {
     background-color: blue;
-
+    position: absolute;
+    left: 90%;
+    top: 40%;
 }
+
+@media screen and (max-width: 767px) {
+    .nav-position {
+        height: 160px;
+    }
+
+   .position .search {
+        top: 50%;
+        left: 28%;
+
+    }
+}
+
 /*  3. Posicionamiento con Float  */
 /*  4. Posicionamiento con Grid  */
 .grid {
