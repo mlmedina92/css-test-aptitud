@@ -227,16 +227,18 @@ img {
         height: 104px;
         grid-column-gap: 0px;
 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
 
     }
     .grid .logo {
-        order:1
+        order:1;
     }
     .grid .search {
-        order:3
+        order:3;
+        grid-column: 1/-1;
     }
     .grid .container-icons {
-        order:3
+        order:2;
     }
 }
